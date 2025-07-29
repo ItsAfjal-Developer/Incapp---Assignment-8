@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f5cdcd;
+  font-family: Arial, sans-serif;
+}
+
+.box {
+  width: 150px;
+  margin: 20px;
+  height: 100px;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #333;
+  background-color: #e0e0e0;
+  transition: transform 0.5s ease;
+}
+
+.rotate:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
+.translate:hover {
+  transform: translateX(20px);
+}
